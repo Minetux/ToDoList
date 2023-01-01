@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkbrown: #261F1A;
+    --brown: #8C837B;
+    --lightbrown: #F2DDD0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--darkbrown);
+}
+.wrapper {
+    width: 800px;
+    text-align: center;
+    background-color: var(--brown);
+    border-radius: 10px;
+}
+.todo h1 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: var(--darkbrown);
+}
+.todo__input {
+    width: 80%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.todo__btn-add  {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: var(--darkbrown);
+    color: var(--lightbrown);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s;
+}
+.todo__btn-add:hover {
+    background-color: var(--lightbrown);
+    color: var(--darkbrown);
+}
+.todolist h2 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: var(--darkbrown);
+
+}
+.todolist__error {
+    margin-top: 5px;
+    color: var(--darkbrown);
+}
+
+.todolist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 40px;
+    padding-left: 10px;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+}
+.todolist__tools button {
+    padding: 10px 14px;
+    border: none;
+    margin-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.todolist__btn-complete{
+    color: rgb(14, 14, 136);
+   
+}
+.todolist__btn-edit{
+    font-weight: bold;
+    color: rgb(15, 179, 69);
+    
+}
+.todolist__btn-delete {
+    border-radius: 0 5px 5px 0;
+    color: tomato;
+    
+}
+.popup {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    width: 800px;
+    background-color: var(--brown);
+    text-align: center;
+    border-radius: 10px;
+}
+.popup h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: var(--darkbrown);
+}
+.popup__info {
+    margin-top: 10px;
+    color: var(--darkbrown);
+}
+.popup__input {
+    width: 80%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.popup__btn {
+    width: 30%;
+    margin: 15px;
+    padding: 8px 20px;
+    background-color: var(--darkbrown);
+    color: var(--lightbrown);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s;
+
+}
+.popup__btn:hover {
+    background-color: var(--lightbrown);
+    color: var(--darkbrown);
+}
+.flex {
+    display: flex;
+}
+.none {
+    display: none;
+}
+.completed {
+    font-size: 12px;
+    color: var(--light-dark);
+    text-decoration: line-through;
+    font-style: italic;
+}
