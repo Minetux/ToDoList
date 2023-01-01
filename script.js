@@ -34,6 +34,7 @@ const prepareDOMEvents = () => {
     ulList.addEventListener('click', checkClick)
     popupBtnCancel.addEventListener('click', closedPopup)
     popupBtnAdd.addEventListener('click', changeTodo)
+    todoInput.addEventListener('keyup', enterKeyCheck)
     
     
 }
@@ -106,5 +107,9 @@ const changeTodo = () => {
 const deleteTodo = (e) => {
     e.target.closest('li').remove()
 }
-
+const enterKeyCheck = (e) => {
+    if(e.key === 'Enter'){
+        addNewTask()
+    }
+}
 document.addEventListener('DOMContentLoaded', main)
